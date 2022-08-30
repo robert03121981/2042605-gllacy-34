@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+l<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -7,9 +7,196 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
+    <header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <div class="container">
+      <div class="navigation">
+        <img src="images/header-logo.png" class="header-logo" alt="логотип компании" width="137px" height="56px">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-item-link">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link">О компании</a>
+          </li>
+         </ul>
 
-  </body>
+         <ul class="navigation-list navigation-user-list">
+          <li class="navigation-item">
+            <a class="navigation-item-link" type="tel">
+              <span></span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a  class="navigation-item-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link"><span>Поиск</span></a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link">Вход</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-item-link">2 товара</a>
+          </li>
+        </ul>
+    </header>
+
+  <main class="main-index">
+  <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
+
+    <section class="pagination-order-ice-cream">
+          <h3 class="pagination-order-ice-cream-title">Нежный пломбир</h3>
+      <p class="pagination-order-ice-cream-desc">Натуральное мороженое из свежих сливок<br>
+        и молока с вкуснейшим клубничным джемом<br> – это идеальный десерт для всей семьи.</p>
+      <button class="pagination-order-ice-cream-button"></button>
+
+      <ol class="pagination-order-ice-cream">
+        <li class="pagination-order-ice-cream-item">
+          <button class="pagination-order-ice-cream-button"><span class="visually-hidden">Нежный пломбир
+            с клубничным джемом</span></button>
+           </li>
+           <li class="pagination-order-ice-cream-item">
+          <button class="pagination-order-ice-cream-button"><span class="visually-hidden">Сливочное мороженое со вкусом банана</span></button>
+           </li>
+           <li class="pagination-order-ice-cream-item">
+          <button class="pagination-order-ice-cream-button"><span class="visually-hidden">Карамельный пломбир
+            с маршмеллоу</span></button>
+           </li>
+      </ol>
+    </section>
+    <section class="slider-order-ice-cream">
+      <ol class="slider-order-ice-cream-picture-list">
+        <li class="slider-order-ice-cream-picture-item">
+          <img src="" alt="Нежный пломбир c клубничным джемом"> </li>
+          <li class="slider-order-ice-cream-picture-item">
+            <img src="" alt="Сливочное мороженое со вкусом банана"> </li>
+            <li class="slider-order-ice-cream-picture-item">
+              <img src="" alt="Карамельный пломбир с маршмеллоу"> </li>
+      </ol>
+      <ul class="slider-social-list">
+        <li class="slider-social-item">
+          <a href="#" class="slider-social-link">
+            <span class="visually-hidden">телеграм</span>
+          </a>
+        </li>
+        <li class="slider-social-item">
+          <a href="#" class="slider-social-link">
+            <span class="visually-hidden">В контакте</span>
+          </a>
+        </li>
+        <li class="slider-social-item">
+          <a href="#" class="slider-social-link">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Заказывайте мороженое и получайте подарки! -->
+<section class="order-giff">
+  <h3 class="order-giff-title">Заказывайте мороженое и получайте подарки! </h3>
+
+  <div class="order-giff-wrapper">
+   <div class="order-giff-item">
+     <p class="order-giff-item-title">Малинка даром!</p>
+     <p class="order-giff-item-desc">При покупке 2 кг<br> любого фруктового мороженого добавим в ваш заказ банку<br> малинового варенья бесплатно.</p>
+     <button class="order-giff-item">Хочу подарок</button>
+   </div>
+   <div class="order-giff-item"><span class="visually-hidden">Фото малинки</span>
+   </div>
+
+
+  <div class="order-giff-wrapper">
+    <div class="order-giff-item">
+      <p class="order-giff-item-title">Маршмеллоу даром!</p>
+      <p class="order-giff-item-desc">При покупке 2 кг пломбира добавимв<br> ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.</p>
+      <button class="order-giff-item">Хочу подарок</button>
+    </div>
+    <div class="order-giff-item"><span class="visually-hidden">фото маршмеллоу</span>
+    </div>
+</section>
+
+<!-- Попробуйте самые популярные вкусы нашего мороженого -->
+  <section class="test-ice-cream">
+    <h3 class="test-ice-cream-header">Попробуйте самые популярные вкусы нашего мороженого</h3>
+     <ul class="test-ice-cream-list">
+      <li class="test-ice-cream-item">
+        <div class="test-ice-cream-picture"><span class="visually-hidden">шарик с мороженым</span></div>
+        <p class="test-ice-cream-title">Малинка</p>
+        <p class="test-ice-cream-title">Сливочное мороженое с малиновым джемом</p>
+      <div class="test-ice-cream-wrapper">
+        <p class="test-ice-cream-price">310 ₽/кг</p>
+        <button class="test-ice-cream-btm"><span class="visually-hidden">Корзина</span></button>
+      </div>
+      </li>
+
+      <li class="test-ice-cream-item">
+        <div class="test-ice-cream-picture"><span class="visually-hidden">шарик с мороженым</span></div>
+        <p class="test-ice-cream-title">Фисташка</p>
+        <p class="test-ice-cream-title">Фисташковый пломбир с кусочками шоколада</p>
+      <div class="test-ice-cream-wrapper">
+        <div class="test-ice-cream-button">340 ₽/кг</div>
+        <button class="test-ice-cream-btm"><span class="visually-hidden">Корзина</span></button>
+      </div>
+      </li>
+
+      <li class="test-ice-cream-item">
+        <div class="test-ice-cream-picture"><span class="visually-hidden">шарик с мороженым</span></div>
+        <p class="test-ice-cream-title">Черника</p>
+        <p class="test-ice-cream-title">Крем-брюле с черничным джемом</p>
+      <div class="test-ice-cream-wrapper">
+        <div class="test-ice-cream-button">330 ₽/кг</div>
+        <button class="test-ice-cream-btm"><span class="visually-hidden">Корзина</span></button>
+      </div>
+      </li>
+
+      <li class="test-ice-cream-item">
+        <div class="test-ice-cream-picture"><span class="visually-hidden">шарик с мороженым</span></div>
+        <p class="test-ice-cream-title">Бабл-гам</p>
+        <p class="test-ice-cream-title">Ванильный пломбир со сладкой посыпкой</p>
+      <div class="test-ice-cream-wrapper">
+        <div class="test-ice-cream-button">320 ₽/кг</div>
+        <button class="test-ice-cream-btm"><span class="visually-hidden">Корзина</span></button>
+      </div>
+      </li>
+
+     </ul>
+  </section>
+
+
+  <!-- Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес -->
+  <section class="online-order-ice-cream">
+    <div class="online-order-ice-cream-wrapper">
+    <h2 class="visually-hidden">онлайн магазин мороженого глейси</h2>
+    <p class="online-order-ice-cream-header">Магазин Глейси – это онлайн и офлайн-магазин по продаже<p> мороженого собственного производства на развес</p>
+    <ul class="online-order-ice-cream">
+     <li class="online-order-ice-item">
+       <p class=online-order-ice-desc>Всё наше мороженое изготавливается на собственном<br> производстве с использованием современного<br> оборудования и проверенных временем технологий.</p>
+     </li>
+
+     <li class="online-order-ice-item">
+      <p class=online-order-ice-desc>Закупка ингредиентов производится только<br> у проверенных фермерских хозяйств, с которыми<br> нас связывает долговременное сотрудничество.</p>
+    </li>
+
+    <li class="online-order-ice-item">
+      <p class=online-order-ice-desc>Доставка нашего мороженого осуществляется в<br> специальном термопаке, который не даёт мороженому<br> растаять и позволяет сохранить превосходный вкус.</p>
+    </li>
+    </ul>
+  </div>
+  </section>
+
+<article class="">
+
+</article>
+
+  </main>
+
+ </body>
+
+
 </html>
 

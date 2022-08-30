@@ -1,3 +1,51 @@
 html {
   background-color:rgba(254, 175, 195, 1);
 }
+
+.navigation-list {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  display: flex;
+  width:650px;
+}
+
+.navigation-user-list {
+  width:520px;
+  padding:0;
+  margin:0;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  width:1170px;
+  margin:0 auto;
+}
+
+.header-logo {
+  display: flex;
+  position: relative;
+}
+
+.header-page {
+  position: relative;
+}
+
+
+.pagination-order-ice-cream {
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
