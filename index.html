@@ -1,4 +1,3 @@
-l
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -11,82 +10,92 @@ l
 
 <body>
   <header>
-
-    <div class="container">
-      <div class="navigation">
-        <img src="images/header-logo.png" class="header-logo" alt="логотип компании" width="137px" height="56px">
+       <nav class="navigation">
+        <a href="https://htmlacademy.ru/">
+         <img src="images/header-logo.png" class="header-logo" alt="логотип компании" width="137px" height="56px"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-item-link">Каталог</a>
+            <a href="#" class="navigation-link">Каталог</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link">Доставка и оплата</a>
+            <a href="#" class="navigation-link">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link">О компании</a>
+            <a href="#" class="navigation-link">О компании</a>
           </li>
         </ul>
 
-        <ul class="navigation-list navigation-user-list">
+        <ul class="navigation-user-list">
           <li class="navigation-item">
-            <a class="navigation-item-link" type="tel">
-              <span></span>
-            </a>
+            <a class="navigation-tel-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+          <a href="#" class="navigation-cirecle-link">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.7 8.2a4.7 4.7 0 1 1 9.3 0 4.7 4.7 0 0 1-9.3 0Zm8.4 4.7a6 6 0 1 1 1-1l2.4 2.5a.7.7 0 1 1-1 1l-2.4-2.5Z" fill="currentcolor"/></svg>
+           <span class="visually-hidden">Поиск</span></a>
+           </li>
+           <li class="navigation-item">
+           <a href="#" class="navigation-link-btm">
+           <svg width="14" height="15" viewBox="0 0 14 15" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.5c0-.3.3-.6.7-.6h2.6a2 2 0 0 1 2 2v9.3a2 2 0 0 1-2 2H8.7a.7.7 0 0 1 0-1.3h2.6a.7.7 0 0 0 .7-.7V2.9a.7.7 0 0 0-.7-.7H8.7a.7.7 0 0 1-.7-.7ZM4.9 3.7c.2-.2.6-.2.9 0L9.1 7a.7.7 0 0 1 .2.5.7.7 0 0 1-.2.5l-3.3 3.3a.7.7 0 1 1-1-1l2.3-2.1H.7a.7.7 0 1 1 0-1.3H7L4.9 4.7a.7.7 0 0 1 0-1Z" fill="currentcolor"/></svg>Вход</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link"><span>Поиск</span></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link">Вход</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link">2 товара</a>
+            <a href="#" class="navigation-link-btm">
+            <svg width="15" height="14" viewBox="0 0 15 14" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.1a.7.7 0 1 0 0 1.3h1.7l.5 2.4 1 4.9A1.8 1.8 0 0 0 6.2 10h5.6a1.8 1.8 0 0 0 1.8-1.4l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.6c0-.3-.3-.5-.6-.5H1.2Zm4.5 8.3-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" fill="currentcolor"/></svg>
+            <span>2 товара</span></a>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
   </header>
 
   <div class="container">
-    <main class="main-index">
+    <main class="main-container main-index">
       <h1 class="visually-hidden">Магазин мороженого "Глейси"</h1>
 
+      <div class="index-column">
+
       <section class="pagination-order-ice-cream">
-        <h3 class="pagination-order-ice-cream-title">Нежный пломбир</h3>
+       <h2 class="pagination-order-ice-cream-title">Нежный пломбир<br> с клубничным джемом</h2>
         <p class="pagination-order-ice-cream-desc">Натуральное мороженое из свежих сливок<br>
           и молока с вкуснейшим клубничным джемом<br> – это идеальный десерт для всей семьи.</p>
-        <button class="pagination-order-ice-cream-button"></button>
+        <button class="pagination-order-ice-cream-button white-btm">Заказать</button>
 
-        <ol class="pagination-order-ice-cream">
+        <ol class="pagination-order-ice-cream-list">
           <li class="pagination-order-ice-cream-item">
-            <button class="pagination-order-ice-cream-button"><span class="visually-hidden">Нежный пломбир
-                с клубничным джемом</span></button>
+            <button class="pagination-order-ice-cream-btm pagination-order-ice-cream-btm-current"><span class="visually-hidden">Нежный пломбир с клубничным джемом</span></button>
           </li>
           <li class="pagination-order-ice-cream-item">
-            <button class="pagination-order-ice-cream-button"><span class="visually-hidden">Сливочное мороженое со
-                вкусом банана</span></button>
+            <button class="pagination-order-ice-cream-btm"><span class="visually-hidden">Сливочное мороженое со вкусом банана</span></button>
           </li>
           <li class="pagination-order-ice-cream-item">
-            <button class="pagination-order-ice-cream-button"><span class="visually-hidden">Карамельный пломбир
-                с маршмеллоу</span></button>
+            <button class="pagination-order-ice-cream-btm"><span class="visually-hidden">Карамельный пломбир с маршмеллоу</span></button>
           </li>
         </ol>
       </section>
-      <section class="slider-order-ice-cream">
-        <ol class="slider-order-ice-cream-picture-list">
-          <li class="slider-order-ice-cream-picture-item">
-            <img src="" alt="Нежный пломбир c клубничным джемом">
+
+      <section class="slider-order-ice-cream-picture">
+         <ol class="slider-order-ice-cream-picture-list">
+           <li class="slider-order-ice-cream-picture-item"><a href="#">
+
+            <div class="slider-button-wrapper">
+
+            <button class="slider-button slider-prev">
+              <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.9 11.1a.7.7 0 0 0 1-1L2.5 6l4.2-4.2a.7.7 0 0 0-1-1L1.3 5.6c-.3.3-.3.7 0 1L5.9 11Z" fill="#FCFCFC"/></svg><span class="visually-hidden">предыдущее фото</span></button>
+
+              <button class="slider-button slider-next">
+                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.1.9a.7.7 0 1 0-1 1L4.5 6 .2 10.2a.7.7 0 0 0 1 1l4.6-4.7c.3-.3.3-.7 0-1L1.1 1Z" fill="#FCFCFC"/></svg><span class="visually-hidden">следущее фото</span></button>
+              </div>
+            <img src="./images/slider-ice-cream.png" alt="Нежный пломбир c клубничным джемом" width="306px" height="507px"></a>
+
+
           </li>
-          <li class="slider-order-ice-cream-picture-item">
-            <img src="" alt="Сливочное мороженое со вкусом банана">
+          <li class="slider-order-ice-cream-picture-item"><a href="#">
+            <img src="./images/slider-banan.png" alt="Сливочное мороженое со вкусом банана" width="66px" height="150px"></a>
           </li>
-          <li class="slider-order-ice-cream-picture-item">
-            <img src="" alt="Карамельный пломбир с маршмеллоу">
+          <li class="slider-order-ice-cream-picture-item"><a href="#">
+            <img src="./images/slider-marshmallow.png" alt="Карамельный пломбир с маршмеллоу" width="66px" height="150px"></a>
           </li>
         </ol>
+
         <ul class="slider-social-list">
           <li class="slider-social-item">
             <a href="#" class="slider-social-link">
@@ -105,6 +114,7 @@ l
           </li>
         </ul>
       </section>
+    </div>
 
       <!-- Заказывайте мороженое и получайте подарки! -->
       <section class="order-giff">
