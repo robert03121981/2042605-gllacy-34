@@ -43,13 +43,13 @@ body {
 }
 
 .pagination-order-ice-cream-title {
-  padding: 0;
-  margin: 0;
-  font-family: "inter", sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
+  padding: 0;
+  margin: 0;
   padding-left: 70px;
   padding-top: 136px;
 }
@@ -193,26 +193,21 @@ body {
 }
 
 .pagination-order-ice-cream-list {
-  list-style-type: none;
   display: flex;
+  list-style-type: none;
   padding: 0;
   margin: 0;
   padding-top: 115px;
   padding-left: 0;
 }
 
-
-.pagination-order-ice-cream-list li:not(:first-child) {
-  padding-left: 4px;
+.pagination-order-ice-cream-list li:first-child {
   padding-right: 4px;
 }
 
-.pagination-order-ice-cream-list li:first-child {
-  display: flex;
-  position: relative;
-  width: 440px;
-  justify-content: center;
-  align-items: center;
+.pagination-order-ice-cream-list li:not(:first-child) {
+  padding-right: 4px;
+  padding-left: 4px;
 }
 
 .pagination-order-ice-cream-btm {
@@ -234,10 +229,25 @@ body {
   display: flex;
 }
 
+.index-column-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 .slider-order-ice-cream-picture {
   display: flex;
   width: 628px;
   flex-direction: column;
+  padding-top: 23px;
+}
+
+.ice-cream-header {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
 }
 
 .slider-order-ice-cream-picture-list {
@@ -247,7 +257,6 @@ body {
   list-style-type: none;
   align-items: center;
   justify-content: space-between;
-  min-height: 100%;
 }
 
 .slider-img {
@@ -255,13 +264,13 @@ body {
 }
 
 .slider-circle {
-  position:absolute;
-  width:312px ;
+  position: absolute;
+  width: 312px;
   height: 312px;
-  border:0;
-  border-radius:50%;
-  background-color:rgba(255, 203, 216, 1);
-  z-index:1;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 203, 216, 1);
+  z-index: 1;
 }
 
 .slider-button-wrapper {
@@ -276,7 +285,7 @@ body {
 
 .slider-order-ice-cream-picture-list li:first-child {
   display: flex;
-  position:relative;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 350px;
@@ -301,17 +310,99 @@ body {
   border: 2px solid rgba(252, 252, 252, 1);
   justify-content: center;
   align-items: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .slider-social-list {
   display: flex;
-  align-items: center;
+  height: 24px;
   padding: 0;
   margin: 0;
-  justify-content: right;
+  margin-left: auto;
   list-style-type: none;
+  padding-top: 0px;
 }
+
+.slider-social-list li:not(:last-child) {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.slider-social-list li:last-child {
+  padding-left: 6px;
+}
+
+.order-giff-title {
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.order-giff-wrapper {
+  position:relative;
+  display: flex;
+  width: 570px;
+  background-color: rgba(255, 119, 153, 1);
+  margin-top: 55px;
+  border-radius: 16px;
+  justify-content: space-between;
+
+}
+
+.order-giff-item-title {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  padding-top: 36px;
+  padding-left: 36px;
+}
+
+.order-giff-item-desc {
+  margin: 0;
+  margin: 0;
+  padding-top: 28px;
+  padding-left: 36px;
+  position:relative;
+}
+
+.order-giff-btm {
+  margin-top:28px;
+  margin-left: 36px;
+  margin-bottom: 36px;
+}
+
+.order-giff-picture {
+  position:absolute;
+  display: block;
+  right: 0;
+  width: 219px;
+  height: 268px;
+  background-image: url('../images/raspberryfree.png');
+  background-repeat: no-repeat;
+ }
+
+ .order-giff-picture-marshmallow {
+  position:absolute;
+  display: block;
+  right: 0;
+  width: 219px;
+  height: 268px;
+  background-image: url('../images/marshmallowfree.png');
+  background-repeat: no-repeat;
+ }
+
+ .test-ice-cream-header {
+  margin:0;
+  padding:0;
+  text-align: center;
+  padding-top:81px;
+ }
 
 .visually-hidden {
   position: absolute;
@@ -321,4 +412,47 @@ body {
   padding: 0;
   border: 0;
   overflow: hidden;
+}
+
+.test-ice-cream-list {
+  display: flex;
+  padding:0;
+  margin:0;
+  list-style-type: none;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.test-ice-cream-list li {
+  position:relative;
+  margin-top:107px;
+  width:270px;
+  height: 287px;
+  background-color:rgba(252, 252, 252, 1);
+  border-radius:8px;
+}
+
+.test-ice-cream-picture {
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  margin-top:-40px;
+}
+
+.test-ice-cream-title {
+  display: block;
+  text-align: center;
+  font-family: "inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color:rgba(45, 52, 64, 1);
+  padding-top:-
+}
+
+.test-ice-cream-desc {
+  display: block;
+  text-align: center;
+  padding-top: ;
 }
