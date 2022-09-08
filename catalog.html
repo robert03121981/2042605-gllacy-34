@@ -10,43 +10,44 @@
 
 <body>
 
+
+<body>
   <header>
-    <div class="container">
-      <div class="navigation">
-        <img src="images/header-logo.png" class="header-logo" alt="логотип компании" width="137px" height="56px">
+       <nav class="navigation">
+        <a href="https://htmlacademy.ru/">
+         <img src="images/header-logo.png" class="header-logo" alt="логотип компании" width="137px" height="56px"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-item-link">Каталог</a>
+            <span class="navigation-link-current">Каталог</span>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link">Доставка и оплата</a>
+            <a href="#" class="navigation-link">Доставка и оплата</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link">О компании</a>
+            <a href="#" class="navigation-link">О компании</a>
           </li>
         </ul>
 
-        <ul class="navigation-list navigation-user-list">
+        <ul class="navigation-user-list">
           <li class="navigation-item">
-            <a class="navigation-item-link" type="tel">
-              <span></span>
-            </a>
+            <a class="navigation-tel-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+          <a href="#" class="navigation-cirecle-link">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.7 8.2a4.7 4.7 0 1 1 9.3 0 4.7 4.7 0 0 1-9.3 0Zm8.4 4.7a6 6 0 1 1 1-1l2.4 2.5a.7.7 0 1 1-1 1l-2.4-2.5Z" fill="currentcolor"/></svg>
+           <span class="visually-hidden">Поиск</span></a>
+           </li>
+           <li class="navigation-item">
+           <a href="#" class="navigation-link-btm">
+           <svg width="14" height="15" viewBox="0 0 14 15" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.5c0-.3.3-.6.7-.6h2.6a2 2 0 0 1 2 2v9.3a2 2 0 0 1-2 2H8.7a.7.7 0 0 1 0-1.3h2.6a.7.7 0 0 0 .7-.7V2.9a.7.7 0 0 0-.7-.7H8.7a.7.7 0 0 1-.7-.7ZM4.9 3.7c.2-.2.6-.2.9 0L9.1 7a.7.7 0 0 1 .2.5.7.7 0 0 1-.2.5l-3.3 3.3a.7.7 0 1 1-1-1l2.3-2.1H.7a.7.7 0 1 1 0-1.3H7L4.9 4.7a.7.7 0 0 1 0-1Z" fill="currentcolor"/></svg>Вход</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-item-link"><span>Поиск</span></a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link">Вход</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link">2 товара</a>
+            <a href="#" class="navigation-link-btm">
+            <svg width="15" height="14" viewBox="0 0 15 14" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.1a.7.7 0 1 0 0 1.3h1.7l.5 2.4 1 4.9A1.8 1.8 0 0 0 6.2 10h5.6a1.8 1.8 0 0 0 1.8-1.4l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.6c0-.3-.3-.5-.6-.5H1.2Zm4.5 8.3-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" fill="currentcolor"/></svg>
+            <span>2 товара</span></a>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
   </header>
 
   <div class="container">
@@ -385,59 +386,81 @@
        </ul>
 
       </section>
+
+
+
+
+
+
+
     </main>
     <!-- Подвал -->
-    <footer class="footer-page">
+       <footer class="footer-page">
 
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a href="#" class="footer-social-link"><span class="visually-hidden">телеграм</a>
-          </li>
-          <li class="footer-social-item">
-            <a href="#" class="footer-social-link"><span class="visually-hidden">вконтакте</a>
-          </li>
-          <li class="footer-social-item">
-            <a href="#" class="footer-social-link"><span class="visually-hidden">ютуб</a>
-          </li>
-        </ul>
-      </section>
+         <section class="footer-social">
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link"><span class="visually-hidden">телеграм</span>
 
-      <section class="footer-navigation">
-        <ul class="footer-navigation-list">
-          <li class="footer-navigation-item">
-            <p> Для поставщиков</p>
-          </li>
-          <li class="footer-navigation-item">
-            <p>О производстве</p>
-          </li>
-          <li class="footer-navigation-item">
-            <p>Наши документы</p>
-          </li>
-          <li class="footer-navigation-item">
-            <p>Экологические стандарты</p>
-          </li>
-        </ul>
-      </section>
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26 14a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-12-3a563 563 0 0 0-6 4l2 1 1-1a123 123 0 0 1 5-3 34 34 0 0 1-3 4v1l1 1a89 89 0 0 0 3 2l1-1a143 143 0 0 0 1-10l-5 2Z" fill="#FCFCFC"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2"/></svg></a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link"><span class="visually-hidden">вконтакте</span>
 
-      <section class="footer-page-logo">
-        <svg class="footer-page-logo-icon" width="93" height="27" viewBox="0 0 93 27" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#a)" fill="#2D3440">
-            <path
-              d="M0 10.4v2.1h2v-2H0ZM9.4 3.7c-1.2 0-2.3.5-2.9 1.4V0H4.7v12.5h1.6V8.2c0-1.7 1.1-3 2.7-3 1.5 0 2.3 1.2 2.3 2.7v4.6h1.7v-5c0-2.3-1.5-3.8-3.7-3.8ZM21.5 4h-3.9V.8H16v3h-1.6v1.6H16v4.8c0 1.4.8 2.2 2.2 2.2h3.3v-1.6h-3c-.6 0-.9-.3-.9-.9V5.5h4V3.9ZM33.3 3.7c-1.4 0-2.4.6-3 1.6a3 3 0 0 0-2.7-1.6c-1.1 0-2 .6-2.5 1.4V4h-1.6v8.6H25V8.1c0-1.6.8-2.8 2.1-2.8 1.2 0 2 .8 2 2.1v5.1h1.6V8c0-2 1.1-2.7 2.1-2.7 1.2 0 2 .8 2 2.1v5.1h1.6V7.2c0-2-1.2-3.5-3.2-3.5ZM38.7 10.3c0 1.4.8 2.2 2.2 2.2h1.7v-1.6h-1.4c-.6 0-.9-.3-.9-.8V0h-1.6v10.3ZM23.4 16a3.7 3.7 0 0 0-3.2-1.5c-2.5 0-4.3 1.8-4.3 4.5 0 2.6 1.8 4.5 4.3 4.5 1.4 0 2.5-.7 3.1-1.6v1.3H25v-8.5h-1.6v1.2Zm-3 5.9c-1.7 0-2.9-1.3-2.9-3 0-1.6 1.2-2.9 3-2.9 1.7 0 2.9 1.3 2.9 3 0 1.6-1.2 2.9-3 2.9ZM35.8 17.8c-.4-2-2.2-3.3-4.4-3.3-2.7 0-4.5 2-4.5 4.5s1.8 4.5 4.5 4.5c2.2 0 4-1.5 4.4-3.4H34c-.3 1-1.3 1.8-2.6 1.8-1.8 0-2.9-1.3-2.9-3 0-1.6 1.1-2.9 3-2.9 1.2 0 2.2.8 2.5 1.8h1.8ZM44.5 16a3.7 3.7 0 0 0-3-1.5c-2.6 0-4.5 1.8-4.5 4.5 0 2.6 1.9 4.5 4.4 4.5 1.4 0 2.4-.7 3-1.6h.1v1.3h1.7v-8.5h-1.7v1.2Zm-2.9 5.9c-1.8 0-3-1.3-3-3 0-1.6 1.2-2.9 3-2.9s3 1.3 3 3c0 1.6-1.2 2.9-3 2.9ZM55.5 16c-.7-.9-1.8-1.5-3.1-1.5-2.5 0-4.4 1.8-4.4 4.5 0 2.6 1.8 4.5 4.4 4.5 1.3 0 2.4-.6 3-1.5h.1v1.2h1.6V10.8h-1.6V16Zm-2.9 6c-1.8 0-3-1.4-3-3s1.2-3 3-3 2.9 1.4 2.9 3-1.1 3-2.9 3ZM63.3 14.5c-2.6 0-4.4 2-4.4 4.5 0 2.4 1.7 4.5 4.5 4.5 2 0 3.6-1.1 4.2-3h-1.7c-.4.9-1.3 1.4-2.5 1.4-1.5 0-2.6-1-2.7-2.4h7c.3-2.8-1.5-5-4.4-5Zm0 1.5c1.4 0 2.4.9 2.7 2h-5.3c.2-1.1 1.3-2 2.6-2ZM79.4 14.5c-1.3 0-2.3.6-2.9 1.6a3 3 0 0 0-2.7-1.6 3 3 0 0 0-2.6 1.4v-1.2h-1.6v8.5h1.6V19c0-1.7.9-2.8 2.2-2.9 1.2 0 1.9.9 1.9 2.2v5h1.6v-4.5c0-1.9 1.2-2.7 2.2-2.7 1.2 0 1.9.9 1.9 2.2v5h1.6V18c0-2-1.2-3.5-3.2-3.5ZM88.5 21.9l-3-7.2h-1.8l4 9.3c-.3.8-.6 1-1.4 1h-2v1.7h2c1.5 0 2.3-.7 2.8-2.1l3.8-10h-1.7L88.5 22Z" />
-          </g>
-          <defs>
-            <clipPath id="a">
-              <path fill="#fff" d="M0 0h93v26.7H0z" />
-            </clipPath>
-          </defs>
-        </svg>
-        <p>Сделано в .html academy © 2021</p>
-      </section>
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26 14a12 12 0 1 1-24 0 12 12 0 0 1 24 0Zm-11 3h-1l-3-1-3-4v-1h2l1 1v1l1 1 1-2-1-1h3v3l1-1 1-2h3l-1 2-1 1 1 1 1 1-1 1h-2l-1-1h-1v1Z" fill="#FCFCFC"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2"/></svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link"><span class="visually-hidden">ютуб</span>
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m16 14-3-2v4l3-2ZM14 2a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm0 17c-6 0-6-1-6-5s0-5 6-5 6 1 6 5 0 5-6 5Z" fill="#FCFCFC"/><rect x="1" y="1" width="26" height="26" rx="13" stroke="#FCFCFC" stroke-opacity=".3" stroke-width="2"/></svg>
+                </a>
+              </li>
+            </ul>
+            </section>
 
-    </footer>
-  </div>
-</body>
+            <section class="footer-navigation">
+    <!--           <table>
+                <tr  class="table-current"><td>Для поставщиков</td><td>О производстве</td></tr>
+                <tr><td>Наши документы</td><td>Экологические стандарты</td></tr>
+              </table>
+     -->
 
-</html>
+            <ul class="footer-navigation-list">
+              <li>
+
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.9 2a3.7 3.7 0 0 0-5.2 0l-.7.7-.7-.7A3.7 3.7 0 0 0 1 7.2l.7.7L7 13l5.2-5.2.7-.7a3.7 3.7 0 0 0 0-5.2Z" fill="#2D3440"/></svg>
+              </li>
+
+                <li class="footer-navigation-current footer-navigation-item">
+                 <a href="#">Для поставщиков</a>
+                </li>
+
+                <li class="footer-navigation-item">
+                  <a href="#">Наши документы</a>
+                 </li>
+
+                 <li class="footer-navigation-item">
+                 </li>
+
+                 <li class="footer-navigation-item">
+                  <a href="#">О производстве</a>
+                 </li>
+
+                 <li class="footer-navigation-item">
+                  <a href="#">Экологические стандарты</a>
+                 </li>
+
+              </ul>
+           </section>
+
+           <section class="footer-page-logo">
+            <a href="#" class="footer-page-logo-link">
+              <svg width="93" height="27" viewBox="0 0 93 27" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#2D3440"><path d="M0 10.4v2.1h2v-2H0ZM9.4 3.7c-1.2 0-2.3.5-2.9 1.4V0H4.7v12.5h1.6V8.2c0-1.7 1.1-3 2.7-3 1.5 0 2.3 1.2 2.3 2.7v4.6h1.7v-5c0-2.3-1.5-3.8-3.7-3.8ZM21.5 4h-3.9V.8H16v3h-1.6v1.6H16v4.8c0 1.4.8 2.2 2.2 2.2h3.3v-1.6h-3c-.6 0-.9-.3-.9-.9V5.5h4V3.9ZM33.3 3.7c-1.4 0-2.4.6-3 1.6a3 3 0 0 0-2.7-1.6c-1.1 0-2 .6-2.5 1.4V4h-1.6v8.6H25V8.1c0-1.6.8-2.8 2.1-2.8 1.2 0 2 .8 2 2.1v5.1h1.6V8c0-2 1.1-2.7 2.1-2.7 1.2 0 2 .8 2 2.1v5.1h1.6V7.2c0-2-1.2-3.5-3.2-3.5ZM38.7 10.3c0 1.4.8 2.2 2.2 2.2h1.7v-1.6h-1.4c-.6 0-.9-.3-.9-.8V0h-1.6v10.3ZM23.4 16a3.7 3.7 0 0 0-3.2-1.5c-2.5 0-4.3 1.8-4.3 4.5 0 2.6 1.8 4.5 4.3 4.5 1.4 0 2.5-.7 3.1-1.6v1.3H25v-8.5h-1.6v1.2Zm-3 5.9c-1.7 0-2.9-1.3-2.9-3 0-1.6 1.2-2.9 3-2.9 1.7 0 2.9 1.3 2.9 3 0 1.6-1.2 2.9-3 2.9ZM35.8 17.8c-.4-2-2.2-3.3-4.4-3.3-2.7 0-4.5 2-4.5 4.5s1.8 4.5 4.5 4.5c2.2 0 4-1.5 4.4-3.4H34c-.3 1-1.3 1.8-2.6 1.8-1.8 0-2.9-1.3-2.9-3 0-1.6 1.1-2.9 3-2.9 1.2 0 2.2.8 2.5 1.8h1.8ZM44.5 16a3.7 3.7 0 0 0-3-1.5c-2.6 0-4.5 1.8-4.5 4.5 0 2.6 1.9 4.5 4.4 4.5 1.4 0 2.4-.7 3-1.6h.1v1.3h1.7v-8.5h-1.7v1.2Zm-2.9 5.9c-1.8 0-3-1.3-3-3 0-1.6 1.2-2.9 3-2.9s3 1.3 3 3c0 1.6-1.2 2.9-3 2.9ZM55.5 16c-.7-.9-1.8-1.5-3.1-1.5-2.5 0-4.4 1.8-4.4 4.5 0 2.6 1.8 4.5 4.4 4.5 1.3 0 2.4-.6 3-1.5h.1v1.2h1.6V10.8h-1.6V16Zm-2.9 6c-1.8 0-3-1.4-3-3s1.2-3 3-3 2.9 1.4 2.9 3-1.1 3-2.9 3ZM63.3 14.5c-2.6 0-4.4 2-4.4 4.5 0 2.4 1.7 4.5 4.5 4.5 2 0 3.6-1.1 4.2-3h-1.7c-.4.9-1.3 1.4-2.5 1.4-1.5 0-2.6-1-2.7-2.4h7c.3-2.8-1.5-5-4.4-5Zm0 1.5c1.4 0 2.4.9 2.7 2h-5.3c.2-1.1 1.3-2 2.6-2ZM79.4 14.5c-1.3 0-2.3.6-2.9 1.6a3 3 0 0 0-2.7-1.6 3 3 0 0 0-2.6 1.4v-1.2h-1.6v8.5h1.6V19c0-1.7.9-2.8 2.2-2.9 1.2 0 1.9.9 1.9 2.2v5h1.6v-4.5c0-1.9 1.2-2.7 2.2-2.7 1.2 0 1.9.9 1.9 2.2v5h1.6V18c0-2-1.2-3.5-3.2-3.5ZM88.5 21.9l-3-7.2h-1.8l4 9.3c-.3.8-.6 1-1.4 1h-2v1.7h2c1.5 0 2.3-.7 2.8-2.1l3.8-10h-1.7L88.5 22Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h93v26.7H0z"/></clipPath></defs></svg>
+            </a>
+            <h3>Сделано в .html academy © 2021</h3>
+           </section>
+
+        </footer>
+       </div>
+
+
