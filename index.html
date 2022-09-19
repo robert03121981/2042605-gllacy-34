@@ -269,7 +269,8 @@
   <!-- Доставка любимого мороженого на дом       -->
       <section class="delivery-home-ice-cream">
         <div class="delivery-home-ice-cream-wrapper">
-         <h2 class="ice-cream-header delivery-home-ice-cream-header">Доставка любимого<br> мороженого на дом</h2>
+         <h2 class="ice-cream-header delivery-home-ice-cream-header">Доставка любимого<br> мороженого на дом
+        </h2>
          <p class="delivery-home-ice-cream-desc">
             Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин? Закажите<br> доставку мороженого на дом, и курьер<br> привезёт вам ваш заказ в течение часа!
          </p>
@@ -277,9 +278,8 @@
 
      <div class="delivery-form-div">
       <p class="delivery-form-div-title">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
-
         <form class="delivery-form" method="post" action="https://echo.htmlacademy.ru/">
-          <p class="field-group appointment-for-data">
+          <p class="appointment-form-data">
             <span class="form-label form-label-icon">
               <label class="form-label" for="appointment-data">Дата</label>
              <span class="tooltip">
@@ -287,22 +287,19 @@
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2a5 5 0 1 0 0 10A5 5 0 0 0 7 2ZM1 7a6 6 0 1 1 12 0A6 6 0 0 1 1 7Zm6-1 1 1v2a1 1 0 0 1-2 0V7l1-1Zm0-2a1 1 0 0 0 0 1 1 1 0 0 0 0-1Z" fill="#2D3440"/></svg>
               </button>
               <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите дату
-
               </span>
-
             </span>
-          </span>
-           <input class="field" type="text" id="appointment-data" name="appointment-data" placeholder="01.04.2020">
+         </span>
+
+           <input class="field" type="datе" id="appointment-data" name="appointment-data" placeholder="01.04.2020">
           </p>
 
-          <p class="field-group appointment-form-phone">
-            <label class="form-label" for="appointment-phone">
-              Телефон
-            </label>
-            <input class="field" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
+          <p class="appointment-form-phone">
+            <label class="form-label" for="appointment-phone">Телефон</label>
+            <input class="field-tel" type="text" id="appointment-phone" name="appointment-phone" placeholder="+7 800 999-00-00">
           </p>
 
-          <p class="field-group appointment-for-address">
+          <p class="appointment-for-address">
             <span class="form-label form-label-icon">
               <label class="form-label" for="appointment-address">Адрес</label>
              <span class="tooltip">
@@ -313,7 +310,7 @@
 
             </span>
           </span>
-           <input class="field" type="text" id="appointment-address" name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
+           <input class="field-address" type="text" id="appointment-address" name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
           <button class="button send-submit" type="submit">Отправить</button>
         </form>
