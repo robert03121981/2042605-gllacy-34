@@ -777,8 +777,16 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: rgba(45, 52, 64, 1);
-  margin-top: 30px;
+  margin-top: 32px;
   min-width: 500px;
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 4px;
+  width: 14px;
+  height: 14px;
 }
 
 
@@ -790,10 +798,8 @@ body {
 
 
 .tooltip-text {
-  position: absolute;
-  bottom: 100%;
-  box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
   background-color: rgba(252, 252, 252, 1);
+  box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
   color: rgba(86, 92, 102, 1);
   font-family: "inter", sans-serif;
   font-style: normal;
@@ -803,10 +809,12 @@ body {
   text-transform: none;
   padding: 8px 10px;
   border-radius: 1px;
+  width: 140px;
+  position: absolute;
+  bottom:100%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 162px;
   margin-bottom: 6px;
+  transform: translateX(-50%);
   z-index: 1;
   display: none;
 }
@@ -814,7 +822,7 @@ body {
 .appointment-form-data {
   padding: 0;
   margin: 0;
-  margin-left:41px;
+  margin-left: 41px;
 }
 
 .appointment-form-phone {
@@ -826,17 +834,17 @@ body {
 .appointment-for-address {
   padding: 0;
   margin: 0;
-  margin-top: 18px;
-  margin-left:41px;
+  margin-top: 20px;
+  margin-left: 41px;
 }
 
 .field {
   display: block;
-  width: 99px;
+  width: 97px;
   height: 44px;
   border: 1px solid rgba(185, 185, 185, 1);
   border-radius: 4px;
-  margin-top: 6px;
+  margin-top: 8px;
   padding-left: 16px;
   font-family: 'Inter';
   font-style: normal;
@@ -849,10 +857,10 @@ body {
   display: block;
   border: 1px solid rgba(185, 185, 185, 1);
   border-radius: 4px;
-  margin-top: 9px;
-  width: 265px;
+  margin-top: 8px;
+  width: 267px;
   height: 44px;
-  padding-left: 16px;
+  padding-left: 19px;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
@@ -864,7 +872,7 @@ body {
   display: block;
   border: 1px solid rgba(185, 185, 185, 1);
   border-radius: 4px;
-  margin-top: 7px;
+  margin-top: 8px;
   width: 400px;
   height: 44px;
   padding-left: 16px;
@@ -880,19 +888,19 @@ body {
   height: 52px;
   display: flex;
   justify-content: center;
-  align-items:center;
-  margin:0 auto;
+  align-items: center;
+  margin: 0 auto;
   border: 4px solid rgba(255, 47, 100, 0.3);
   box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
   border-radius: 26px;
-  background-color:rgba(255, 47, 100, 1);
+  background-color: rgba(255, 47, 100, 1);
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: rgba(252, 252, 252, 1);
-  margin-top:27px;
+  margin-top: 29px;
 }
 
 
@@ -901,11 +909,24 @@ body {
   display: block;
 }
 
-.tooltip-text:after {
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.form-label-icon {
+  position: relative;
+  padding-right: 16px;
+}
+
+ .tooltip-text:after {
   content: '';
-  background-image: url("../images/slider-marshmallow.png");
-  width: 14px;
-  height: 6px;
+  background-image: url("../images/Vector.png");
+  width: 5px;
+  height: 5px;
   position: absolute;
   transform: rotate(180deg);
   top: 100%;

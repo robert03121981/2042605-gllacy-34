@@ -278,20 +278,21 @@
 
      <div class="delivery-form-div">
       <p class="delivery-form-div-title">Укажите адрес и дату доставки, и мы свяжемся<br> с вами, чтобы подтвердить заказ.</p>
+
         <form class="delivery-form" method="post" action="https://echo.htmlacademy.ru/">
           <p class="appointment-form-data">
-            <span class="form-label form-label-icon">
-              <label class="form-label" for="appointment-data">Дата</label>
+
+        <span class="form-label">
+          <label class="form-label" for="appointment-data">Дата</label>
              <span class="tooltip">
               <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2a5 5 0 1 0 0 10A5 5 0 0 0 7 2ZM1 7a6 6 0 1 1 12 0A6 6 0 0 1 1 7Zm6-1 1 1v2a1 1 0 0 1-2 0V7l1-1Zm0-2a1 1 0 0 0 0 1 1 1 0 0 0 0-1Z" fill="#2D3440"/></svg>
+            <svg class="tooltip-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2a5 5 0 1 0 0 10A5 5 0 0 0 7 2ZM1 7a6 6 0 1 1 12 0A6 6 0 0 1 1 7Zm6-1 1 1v2a1 1 0 0 1-2 0V7l1-1Zm0-2a1 1 0 0 0 0 1 1 1 0 0 0 0-1Z" fill="#2D3440"/></svg>
               </button>
-              <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите дату
+              <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите дату доставки
               </span>
             </span>
-         </span>
-
-           <input class="field" type="datе" id="appointment-data" name="appointment-data" placeholder="01.04.2020">
+            <input class="field" type="datе" id="appointment-data" name="appointment-data" placeholder="01.04.2020">
+        </span>
           </p>
 
           <p class="appointment-form-phone">
@@ -300,11 +301,11 @@
           </p>
 
           <p class="appointment-for-address">
-            <span class="form-label form-label-icon">
+            <span class="form-label">
               <label class="form-label" for="appointment-address">Адрес</label>
              <span class="tooltip">
               <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2a5 5 0 1 0 0 10A5 5 0 0 0 7 2ZM1 7a6 6 0 1 1 12 0A6 6 0 0 1 1 7Zm6-1 1 1v2a1 1 0 0 1-2 0V7l1-1Zm0-2a1 1 0 0 0 0 1 1 1 0 0 0 0-1Z" fill="#2D3440"/></svg>
+            <svg class="tooltip-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2a5 5 0 1 0 0 10A5 5 0 0 0 7 2ZM1 7a6 6 0 1 1 12 0A6 6 0 0 1 1 7Zm6-1 1 1v2a1 1 0 0 1-2 0V7l1-1Zm0-2a1 1 0 0 0 0 1 1 1 0 0 0 0-1Z" fill="#2D3440"/></svg>
               </button>
               <span class="tooltip-text" role="tooltip" id="tooltip-label">Введите название улицы, дома и квартиры</span>
 
@@ -312,7 +313,7 @@
           </span>
            <input class="field-address" type="text" id="appointment-address" name="appointment-address" placeholder="ул. Большая Конюшенная, 19/8">
           </p>
-          <button class="button send-submit" type="submit">Отправить</button>
+          <button class="send-submit" type="submit">Отправить</button>
         </form>
 
       </div>
