@@ -201,7 +201,8 @@ body {
   cursor: pointer;
 }
 
-.navigation-cirecle-link {
+.navigation-circle-link {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,7 +211,32 @@ body {
   border-radius: 50%;
   background-color: rgba(252, 252, 252, 0.3);
   cursor: pointer;
-  color: inherit;
+  color: rgba(0, 0, 0, 1);
+  border: 0;
+}
+
+.navigation-circle-link:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  color: rgba(0, 0, 0, 1);
+  border: 0;
+}
+
+.navigation-circle-link:active {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid rgba(45, 52, 64, 1);
+  color: rgba(45, 52, 64, 1);
+}
+
+.navigation-circle-link:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  color: rgba(0, 0, 0, 1);
+  border: 0;
+}
+
+.navigation-circle-link:disabled {
+  background-color: rgba(255, 74, 120, 1);
+  color: rgba(252, 252, 252, 1);
+  border: 0;
 }
 
 .navigation-link-btm {
@@ -268,10 +294,31 @@ body {
   border: 0;
   width: 12px;
   height: 12px;
-  border-radius: 50%;
+  border-radius: 100%;
   background-color: rgba(252, 252, 252, 1);
   cursor: pointer;
 }
+
+.pagination-order-ice-cream-btm:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid rgba(252, 252, 252, 1);
+}
+
+.pagination-order-ice-cream-btm:active {
+  background-color: rgba(252, 252, 252, 1);
+  border: 0;
+}
+
+.pagination-order-ice-cream-btm:focus {
+  background-color: rgba(252, 252, 252, 1);
+  border: 0;
+}
+
+.pagination-order-ice-cream-btm:disabled {
+  background: rgba(252, 252, 252, 0.3);
+  border: 1px solid rgba(45, 52, 64, 1);
+}
+
 
 .pagination-order-ice-cream-btm-current {
   background-color: rgba(252, 252, 252, 1);
@@ -1673,23 +1720,41 @@ body {
 }
 
 .pagination-button {
-  position:relative;
+  box-sizing:border-box;
   text-decoration: none;
-  color: inherit;
-  margin-left: 7px;
-  margin-right: 7px;
-
-}
-
-.pagination-button span{
-  position:absolute;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  padding-left: 7px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: inherit;
+  background-color: rgba(254, 175, 195, 1);
+  border-radius: 50%;
 }
 
+.pagination-button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border:0;
+}
+
+.pagination-button:active {
+  border: 1px solid rgba(252, 252, 252, 1);
+  background: rgba(252, 252, 252, 0.5);
+}
+
+.pagination-button:focus-visible {
+  background: rgba(252, 252, 252, 0.3);
+  border: 1px solid rgba(45, 52, 64, 1);
+}
+
+.pagination-button:disabled {
+  background-color: rgba(252, 252, 252, 1);
+  border: 0;
+}
 
 .pagination-button-next {
   text-decoration: none;
