@@ -28,10 +28,10 @@
         </ul>
 
         <ul class="navigation-user-list">
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <a class="navigation-tel-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <a href="#" class="navigation-circle-link">
               <svg width="16" height="17" viewBox="0 0 16 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -39,16 +39,34 @@
                   fill="currentcolor" />
               </svg>
               <span class="visually-hidden">Поиск</span></a>
+                <form class="find-nav">
+                   <input class="find-to-site" type="text" value="Поиск по сайту">
+                </form>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <a href="#" class="navigation-link-btm">
               <svg width="14" height="15" viewBox="0 0 14 15" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M8 1.5c0-.3.3-.6.7-.6h2.6a2 2 0 0 1 2 2v9.3a2 2 0 0 1-2 2H8.7a.7.7 0 0 1 0-1.3h2.6a.7.7 0 0 0 .7-.7V2.9a.7.7 0 0 0-.7-.7H8.7a.7.7 0 0 1-.7-.7ZM4.9 3.7c.2-.2.6-.2.9 0L9.1 7a.7.7 0 0 1 .2.5.7.7 0 0 1-.2.5l-3.3 3.3a.7.7 0 1 1-1-1l2.3-2.1H.7a.7.7 0 1 1 0-1.3H7L4.9 4.7a.7.7 0 0 1 0-1Z"
                   fill="currentcolor" />
               </svg>Вход</a>
+
+              <form class="personal-area">
+                <label class="personal-area-label" for="personal-area-input">Личный кабинет
+                   <input class="personal-area-email" type="email" value="email@example.com" id="personal-area-input">
+                   <input class="personal-area-password" type="password" value="******" id="personal-area-input">
+                </label>
+               <div class="wrapper">
+                  <button class="come-in red-button">Войти</button>
+                <div class="wrapper-link">
+                   <a class="forgot-password" href="#">Забыли пароль?</a>
+                   <a class="registration" href="#">Регистрация</a>
+                </div>
+              </div>
+            </form>
+
           </li>
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <a href="#" class="navigation-link-btm">
               <svg width="15" height="14" viewBox="0 0 15 14" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -56,6 +74,38 @@
                   fill="currentcolor" />
               </svg>
               <span>2 товара</span></a>
+              <div class="popover">
+                <h2 class="popover-title">Корзина </h2>
+                  <ul class="card-list">
+                     <li class="card-item">
+                       <img class="card-picture" src="./images/raspberry.png" alt="мороженое малинка" width="50" height="50">
+                       <div class="card-wrapper-desc">
+                         <span>Малинка</span>
+                         <p>1 кг х 310 ₽</p>
+                        </div>
+                        <div class="card-price">310 ₽</div>
+                        <button class="card-img-del"><span class="visually-hidden">Кнопка удаления</span>
+                        </button>
+                       </li>
+
+                     <li class="card-item">
+                     <img class="card-picture" src="./images/bublegum.png" alt="мороженое бабл-гам" width="50" height="50">
+                      <div class="card-wrapper-desc">
+                        <span>Бабл-гам</span>
+                        <p>1,5 кг х 320 ₽</p>
+                       </div>
+                       <div class="card-price">480 ₽</div>
+                      <button class="card-img-del"><span class="visually-hidden">Кнопка удаления товара</span></button>
+                    </li>
+                  </ul>
+
+                  <div class="wrapper-send">
+                    <button class="red-button send-button">Оформить заказ</button>
+                     <p>Итого: 790 ₽</p>
+                   </div>
+                </div>
+            </div>
+            <div class="popover-cart-empty"><span>Ваша корзина пока пуста<span></div>
           </li>
         </ul>
       </nav>

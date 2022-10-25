@@ -9,13 +9,23 @@
 </head>
 
 <body>
-  <header>
+   <header>
        <nav class="navigation-index">
         <a href="https://htmlacademy.ru/">
          <img src="images/header-logo.png" class="header-logo" alt="логотип компании" width="137px" height="56px"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a href="catalog.html" class="navigation-link">Каталог</a>
+            <div class="popap-catalog-new">
+              <ul class="popap-catalog-list-new">
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </div>
+
           </li>
           <li class="navigation-item">
             <a href="#" class="navigation-link">Доставка и оплата</a>
@@ -26,30 +36,46 @@
         </ul>
 
         <ul class="navigation-user-list">
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <a class="navigation-tel-link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
           </li>
-          <li class="navigation-item">
+          <li class="navigation-user-item">
           <a href="#" class="navigation-circle-link">
 
           <svg width="16" height="17" viewBox="0 0 16 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.7 8.2a4.7 4.7 0 1 1 9.3 0 4.7 4.7 0 0 1-9.3 0Zm8.4 4.7a6 6 0 1 1 1-1l2.4 2.5a.7.7 0 1 1-1 1l-2.4-2.5Z" fill="currentcolor"/></svg>
            <span class="visually-hidden">Поиск</span></a>
-
+            <form class="find-nav">
+            <input class="find-to-site" type="text" value="Поиск по сайту">
+            </form>
            </li>
-           <li class="navigation-item">
+           <li class="navigation-user-item">
            <a href="#" class="navigation-link-btm">
            <svg width="14" height="15" viewBox="0 0 14 15" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.5c0-.3.3-.6.7-.6h2.6a2 2 0 0 1 2 2v9.3a2 2 0 0 1-2 2H8.7a.7.7 0 0 1 0-1.3h2.6a.7.7 0 0 0 .7-.7V2.9a.7.7 0 0 0-.7-.7H8.7a.7.7 0 0 1-.7-.7ZM4.9 3.7c.2-.2.6-.2.9 0L9.1 7a.7.7 0 0 1 .2.5.7.7 0 0 1-.2.5l-3.3 3.3a.7.7 0 1 1-1-1l2.3-2.1H.7a.7.7 0 1 1 0-1.3H7L4.9 4.7a.7.7 0 0 1 0-1Z" fill="currentcolor"/></svg>Вход</a>
+
+               <form class="personal-area">
+                  <label class="personal-area-label" for="personal-area-input">Личный кабинет
+                     <input class="personal-area-email" type="email" value="email@example.com" id="personal-area-input">
+                     <input class="personal-area-password" type="password" value="******" id="personal-area-input">
+                  </label>
+                 <div class="wrapper">
+                    <button class="come-in red-button">Войти</button>
+                  <div class="wrapper-link">
+                     <a class="forgot-password" href="#">Забыли пароль?</a>
+                     <a class="registration" href="#">Регистрация</a>
+                  </div>
+                </div>
+              </form>
+
           </li>
-          <li class="navigation-item">
+          <li class="navigation-user-item">
             <a href="#" class="navigation-link-btm">
             <svg width="15" height="14" viewBox="0 0 15 14" fill="currentcolor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.2.1a.7.7 0 1 0 0 1.3h1.7l.5 2.4 1 4.9A1.8 1.8 0 0 0 6.2 10h5.6a1.8 1.8 0 0 0 1.8-1.4l1-4.9a.7.7 0 0 0-.7-.8H4.6L4.1.6c0-.3-.3-.5-.6-.5H1.2Zm4.5 8.3-.8-4H13l-.8 4a.5.5 0 0 1-.5.4H6.2a.5.5 0 0 1-.5-.4Zm-1.1 4a1.2 1.2 0 1 1 2.4 0 1.2 1.2 0 0 1-2.4 0Zm6.3 0a1.2 1.2 0 1 1 2.5 0 1.2 1.2 0 0 1-2.5 0Z" fill="currentcolor"/></svg>
             <span>2 товара</span></a>
-            <form class="card-form">
-            <div class="popover popover-card">
+               <div class="popover popover-card">
                   <h2 class="popover-title">Корзина </h2>
                     <ul class="card-list">
                        <li class="card-item">
-                         <img class="card-picture" src="./images/raspberry.png" alt="мороженое малинка" width="46" height="46">
+                         <img class="card-picture" src="./images/raspberry.png" alt="мороженое малинка" width="50" height="50">
                          <div class="card-wrapper-desc">
                            <span>Малинка</span>
                            <p>1 кг х 310 ₽</p>
@@ -60,7 +86,7 @@
                          </li>
 
                        <li class="card-item">
-                       <img class="card-picture" src="./images/bublegum.png" alt="" width="46" height="46">
+                       <img class="card-picture" src="./images/bublegum.png" alt="мороженое бабл-гам" width="50" height="50">
                         <div class="card-wrapper-desc">
                           <span>Бабл-гам</span>
                           <p>1,5 кг х 320 ₽</p>
@@ -76,9 +102,12 @@
                    </div>
                 </div>
             </div>
+
+            <div class="popover-cart-empty"><span>Ваша корзина пока пуста<span></div>
           </li>
         </ul>
       </nav>
+
   </header>
 
   <div class="container">
@@ -105,7 +134,6 @@
           </li>
         </ol>
       </section>
-
       <section class="slider-order-ice-cream-picture">
          <ol class="slider-order-ice-cream-picture-list">
            <li class="slider-order-ice-cream-picture-item">
@@ -180,7 +208,6 @@
         <div class="order-giff-picture-marshmallow"><span class="visually-hidden">Фото маршмеллоу</span>
          </div>
         </div>
-
       </section>
 
       <!-- Попробуйте самые популярные вкусы нашего мороженого -->
@@ -253,29 +280,35 @@
         <div class="online-order-ice-cream-wrapper">
 
           <h2 class="visually-hidden">онлайн магазин мороженого</h2>
-          <p class="ice-cream-header online-order-ice-cream-header">Магазин Глейси – это онлайн и офлайн-магазин по продаже<br> мороженого собственного производства на развес</br>
+          <p class="ice-cream-header online-order-ice-cream-header">Магазин Глейси – это онлайн и офлайн-магазин по продаже<br> мороженого собственного производства на развес</br></p>
+
            <ul class="online-order-ice-cream-list">
             <li class="online-order-ice-item">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="23" stroke="#2D3440" stroke-width="2"/><path d="M24 8a8 8 0 0 0-8 7v16h16V15a8 8 0 0 0-8-7Zm6 21H18v-9a2 2 0 0 0 1 1c2 0 2-1 2-2a1 1 0 1 1 2 0v3a2 2 0 0 0 2 1 2 2 0 0 0 2-1v-2a1 1 0 1 1 2 0 1 1 0 0 0 1 1v8ZM23 39a1 1 0 0 0 2 0v-7h-2v7Z" fill="#2D3440"/></svg>
+              <div class="online-order-ice-item-img path-ice-cream"><span class="visually-hidden">круг с мороженым</span></div>
 
               <p>Всё наше мороженое изготавливается на собственном<br> производстве с
                 использованием современного<br> оборудования и проверенных временем технологий.</p>
             </li>
 
             <li class="online-order-ice-item">
-              <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24.5" cy="24" r="23" stroke="#2D3440" stroke-width="2"/><g clip-path="url(#a)"><path d="M35 18a12 12 0 0 0 1-9l-1-1a1 1 0 0 0-1 1c-2 2-4 6-6 6h-1l-2-1-3 1c-3 0-5-4-7-6V8a1 1 0 0 0-1 0l-1 1a12 12 0 0 0 1 9l-5 2a2 2 0 0 0 0 3l1 1h1l3-1v2a34 34 0 0 0 2 7l-1 2a4 4 0 0 0 2 3c1 2 4 3 8 3 3 0 6-1 7-3a4 4 0 0 0 2-3l-1-2v-2l2-5v-2l3 1h1l1-1a2 2 0 0 0 0-3l-5-2Zm-1-6c1 2 0 4-1 6l-1-1-2-1 4-4Zm-19 0 4 4-2 1-1 1c-1-2-2-4-1-6Zm-4 10v-1l3-1v1l-3 1Zm22 3a33 33 0 0 1-2 6v1l1 2a2 2 0 0 1-1 2l-6 2c-4 0-6-1-7-2v-6l-2-5a7 7 0 0 1 2-7l7-2 6 2a7 7 0 0 1 2 7Zm5-3-3-1v-1l3 1v1Z" fill="#2D3440"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(9 8)" d="M0 0h32v32H0z"/></clipPath></defs></svg>
+
+              <div class="online-order-ice-item-img path-cow"><span class="visually-hidden">круг с коровой</span></div>
 
               <p>Закупка ингредиентов производится только<br> у проверенных фермерских
                 хозяйств, с которыми<br> нас связывает долговременное сотрудничество.</p>
             </li>
 
             <li class="online-order-ice-item">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="23" stroke="#2D3440" stroke-width="2"/><path d="M33 26c0-9-8-17-8-18h-2c0 1-8 9-8 18v2c0 10 9 12 9 12s9-2 9-12v-2Zm-16-3 6 4v4c-2-1-6-3-7-5l1-3Zm2-5c1 2 2 3 4 3v4l-5-4 1-3Zm11 3-5 4v-4c2 0 3-1 4-3l1 3Zm-5-2v-7l3 4-3 3Zm0 12v-4l6-4 1 3c-1 2-5 4-7 5Zm-2-12-3-3 3-5v8Zm-6 10 6 5v4l-4-4-2-5Zm8 9v-5l6-4-2 5-4 4Z" fill="#2D3440"/></svg>
+
+              <div class="online-order-ice-item-img path-leaf"><span class="visually-hidden">круг с листочком</span></div>
+
               <p>Для приготовления мороженого используются сливки<br> и молоко высочайшего качества. Все ингредиенты<br> и добавки произведены из натурального сырья.</p>
             </li>
 
             <li class="online-order-ice-item">
-              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="23" stroke="#2D3440" stroke-width="2"/><path d="m27 13-1-4-3-1-4 1-1 4v15l-2 5 1 3 2 3 3 1 3-1 3-2 1-3v-3c0-2-1-3-2-3V13Zm0 20v2l-2 2a4 4 0 0 1-4 0l-2-1a5 5 0 0 1-1-5l2-2V13l1-2 2-1 2 1v18l2 1v3Z" fill="#2D3440"/><path d="M24 30V13l-1-1h-1v18l-2 1a3 3 0 0 0 1 4l2 1 1-1 1-2v-2l-1-1ZM35 12h-6v2h6v-2ZM35 16h-6v2h6v-2ZM35 20h-6v2h6v-2ZM35 24h-6v2h6v-2Z" fill="#2D3440"/></svg>
+
+              <div class="online-order-ice-item-img path-thermometer"><span class="visually-hidden">круг с термометром</span></div>
+
               <p>Доставка нашего мороженого осуществляется в<br> специальном термопаке,
                 который не даёт мороженому<br> растаять и позволяет сохранить превосходный вкус.</p>
             </li>
@@ -283,7 +316,7 @@
         </div>
         </section>
 
-     <div class="news">
+    <div class="news">
       <section class="news-the-blog">
        <div class="news-the-blog-wrapper">
         <h2 class="news-the-blog-header">Новое в нашем блоге</h2>
@@ -293,11 +326,12 @@
         </section>
 
       <section class="newsletter">
-         <form class="newsletter-form" method="post" action="https://echo.htmlacademy.ru/">
-          <label for="newsletter-email">Подпишитесь на нашу сладкую рассылку и будьте всегда<br> в курсе всего самого вкусного, что у нас происходит. Обещаем<br> не спамить и не слать всякой ненужной ерунды. Честно =)</label>
-          <input class="field" name="newsletter-email" id="newsletter-email" type="email" placeholder="email@example.com" required>
-           <button class="newsletter-button red-button">Отправить</button>
+       <form class="newsletter-form">
+        <label for="newsletter-email">Подпишитесь на нашу сладкую рассылку и будьте всегда<br> в курсе всего самого вкусного, что у нас происходит. Обещаем<br> не спамить и не слать всякой ненужной ерунды. Честно =)</label>
+        <input id="newsletter-email" type="email" placeholder="email@example.com" required>
+        <button class="newsletter-button red-button">Отправить</button>
         </form>
+      </section>
     </div>
 
   <!-- Доставка любимого мороженого на дом       -->
@@ -429,6 +463,32 @@
 
 
     </footer>
+   </div>
+
+   <div class="modal-container modal-container-close">
+      <div class="feedback-form">
+        <button class="modal-button-close" type="button">
+        <span class=visually-hidden>Закрыть</span>
+        </button>
+        <h2 class="modal-container-title">Мы обязательно ответим вам!</h2>
+
+         <form action="https://echo.htmlacademy.ru/" class="modal-form">
+            <label for="label-fio"><span class="visually-hidden">Имя и фамилия</span>
+              <input class="input-fio" type="text" value="Имя и фамилия" id="label-fio">
+            </label>
+            <label for="label-email""><span class="visually-hidden">Email</span>
+              <input class="input-email" type="email" value="email@example.com" id="label-email">
+            </label>
+            <label for="label-text""><span class="visually-hidden">В свободной форме</span>
+              <textarea class="input-text" type="text" id="label-email">В свободной форме</textarea>
+            </label>
+
+            <div class="modal-div-sibmit">
+            <button type="submit" class="red-button submit-server">Отправить</button>
+          </div>
+         </form>
+      </div>
+
    </div>
   <!-- для контейнера -->
 </body>
